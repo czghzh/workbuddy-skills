@@ -16,8 +16,10 @@ CHECK_ONLY=0
 # pcdn-niulink-box : 正文里写死了真实密码和内网 IP，整体排除
 # ponytail*        : 第三方 MIT 技能，有上游仓库，从上游装
 # /*.json          : WorkBuddy 本地迁移标记，顶层的才排
-# 下面四个是本仓库自己的文件，必须排除，否则 --delete 会删掉它们
+# 下面五个是本仓库自己的文件，必须排除，否则 --delete 会删掉它们
+# .git 必须排除：漏了它 rsync --delete 会把仓库的版本库本体删掉（2026-10-01 踩过的雷）
 EXCLUDES=(
+  --exclude='.git'
   --exclude='pcdn-niulink-box'
   --exclude='ponytail*'
   --exclude='/*.json'
