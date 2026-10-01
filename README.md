@@ -23,9 +23,10 @@ OpenWrt 固件编译、Airoha 光猫移植、嵌入式设备调试。
 | `openwrt-offline-kmod-repo` | 给 OpenWrt 设备做设备内离线 kmod 源（含 7 个配套脚本） |
 | `openwrt-usb-tree-disk-loss-recovery` | 外置盘上的 OpenWrt 源码树掉盘 / 换盘后的恢复 |
 | `openwrt-wifi-txpower-regdb` | OpenWrt WiFi 发射功率与 regdb 调整 |
+| `trae-relay-model-audit` | 给 Trae CN 反代暴露的模型做批量体检：哪些真会调客户端工具、费用排序、选型建议 |
 | `vendor-ko-mainline-port` | 厂商预编译 .ko → 主线内核移植与打包（含 vermagic 替换脚本） |
 
-共 13 个技能、24 个文件。
+共 14 个技能、25 个文件。
 
 ## 来源
 
